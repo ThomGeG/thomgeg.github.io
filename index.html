@@ -1,12 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
-    ThomGeG
+    <title>Arcane AO3 Analyzer</title>
+    <script src="https://d3js.org/d3.v6.js"></script>
   </head>
 
   <body>
-    <p>Hello World!</p>
-    <a href="/conga">Conga</a>
+    <h2>Arcane AO3 Analyzer Results</h2>
+    <p>Visual design is my passion.</p>
+
+    <div>
+      <h3>Tops by work count over time</h3>
+      <div id="tops_by_total_works"></div>
+    </div>
+    <!-- Can't run the script until after the div is created you knob... otherwise it has nothing to target. -->
+    <script src="graph.js"></script>
   </body>
 
 </html>

@@ -1,21 +1,482 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <head>
-    <title>Arcane AO3 Analyzer</title>
-    <script src="https://d3js.org/d3.v6.js"></script>
-  </head>
+		<title>Adventures in A3</title>
 
-  <body>
-    <h2>Arcane AO3 Analyzer Results</h2>
-    <p>Visual design is my passion.</p>
+		<script src="https://d3js.org/d3.v6.js"></script>
 
-    <div>
-      <h3>Tops by work count over time</h3>
-      <div id="tops_by_total_works"></div>
-    </div>
-    <!-- Can't run the script until after the div is created you knob... otherwise it has nothing to target. -->
-    <script src="graph.js"></script>
-  </body>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2 class="r-fit-text">So you think you know the Arcane Fandom?</h2>
+				</section>
 
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2 class="r-fit-text">So you think you know the Arcane Fandom?</h2>
+					<p>Aka: An idiots attempt to do data science</p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2 class="r-fit-text">So you think you know the Arcane Fandom?</h2>
+					<p style="opacity: 0.2">Aka: An idiots attempt to do data science</p>
+					<p>Aka: An attempt to match some freak</p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2 class="r-fit-text">So you think you know the Arcane Fandom?</h2>
+					<p style="opacity: 0.2">Aka: An idiots attempt to do data science</p>
+					<p style="opacity: 0.2">Aka: An attempt to match some freak</p>
+					<p><small>Brought to you by ThomGeG</small></p>
+				</section>
+
+				<section>
+					<section data-auto-animate data-auto-animate-unmatched="fade">
+						<h3 class="r-fit-text">Who is the most popular top?</h3>
+					</section>
+					<section data-auto-animate data-auto-animate-unmatched="fade">
+						<h3 class="r-fit-text">Who is the most popular top?</h3>
+						<table style="font-size: medium">
+							<tr>
+								<th data-id="h0">Character</th>
+								<th data-id="h1">Total Works</th>
+								<th data-id="h2">Total Kudos</th>
+								<th data-id="h3">Total Hits</th>
+								<th data-id="h4">Total Words</th>
+							</tr>
+							<tr data-id="caitlyn">
+								<td>Caitlyn</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="viktor">
+								<td>Viktor</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jayce">
+								<td>Jayce</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vi">
+								<td>Vi</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jinx">
+								<td>Jinx</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="mel">
+								<td>Mel</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="sevika">
+								<td>Sevika</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="silco">
+								<td>Silco</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vander">
+								<td>Vander</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="ekko">
+								<td>Ekko</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-auto-animate-unmatched="fade">
+						<h3 class="r-fit-text">Who is the most popular top?</h3>
+						<table style="font-size: medium">
+							<tr>
+								<th data-id="h0">Character</th>
+								<th data-id="h1" style="color: limegreen; border-color: #FFF;">Total Works</th>
+								<th data-id="h2">Total Kudos</th>
+								<th data-id="h3">Total Hits</th>
+								<th data-id="h4">Total Words</th>
+							</tr>
+							<tr data-id="caitlyn">
+								<td>Caitlyn</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="viktor">
+								<td>Viktor</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jayce">
+								<td>Jayce</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vi">
+								<td>Vi</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jinx">
+								<td>Jinx</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="mel">
+								<td>Mel</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="sevika">
+								<td>Sevika</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="silco">
+								<td>Silco</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vander">
+								<td>Vander</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="ekko">
+								<td>Ekko</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-auto-animate-unmatched="fade">
+						<h3 class="r-fit-text">Who is the most popular top?</h3>
+						<table style="font-size: medium">
+							<tr>
+								<th data-id="h0">Character</th>
+								<th data-id="h1">Total Works</th>
+								<th data-id="h2" style="color: limegreen; border-color: #FFF;">Total Kudos</th>
+								<th data-id="h3">Total Hits</th>
+								<th data-id="h4">Total Words</th>
+							</tr>
+							<tr data-id="caitlyn">
+								<td>Caitlyn</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jayce">
+								<td>Jayce</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vi">
+								<td>Vi</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jinx">
+								<td>Jinx</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="mel">
+								<td>Mel</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="viktor">
+								<td>Viktor</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="sevika">
+								<td>Sevika</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vander">
+								<td>Vander</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="ekko">
+								<td>Ekko</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="silco">
+								<td>Silco</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-auto-animate-unmatched="fade">
+						<h3 class="r-fit-text">Who is the most popular top?</h3>
+						<table style="font-size: medium">
+							<tr>
+								<th data-id="h0">Character</th>
+								<th data-id="h1">Total Works</th>
+								<th data-id="h2">Total Kudos</th>
+								<th data-id="h3" style="color: limegreen; border-color: #FFF;">Total Hits</th>
+								<th data-id="h4">Total Words</th>
+							</tr>
+							<tr data-id="caitlyn">
+								<td>Caitlyn</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="viktor">
+								<td>Viktor</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jayce">
+								<td>Jayce</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vi">
+								<td>Vi</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jinx">
+								<td>Jinx</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="mel">
+								<td>Mel</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="sevika">
+								<td>Sevika</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="silco">
+								<td>Silco</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vander">
+								<td>Vander</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="ekko">
+								<td>Ekko</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-auto-animate-unmatched="fade">
+						<h3 class="r-fit-text">Who is the most popular top?</h3>
+						<table style="font-size: medium">
+							<tr>
+								<th data-id="h0">Character</th>
+								<th data-id="h1">Total Works</th>
+								<th data-id="h2">Total Kudos</th>
+								<th data-id="h3">Total Hits</th>
+								<th data-id="h4" style="color: limegreen; border-color: #FFF;">Total Words</th>
+							</tr>
+							<tr data-id="caitlyn">
+								<td>Caitlyn</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="viktor">
+								<td>Viktor</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jayce">
+								<td>Jayce</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vi">
+								<td>Vi</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="jinx">
+								<td>Jinx</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="mel">
+								<td>Mel</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="sevika">
+								<td>Sevika</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="silco">
+								<td>Silco</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="vander">
+								<td>Vander</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+							<tr data-id="ekko">
+								<td>Ekko</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+								<td>?</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<div id="tops_by_total_works"></div>
+					</section>
+				</section>
+
+
+				<!-- FINAL SECTION -->
+				<section>
+					<section>
+						<h1>Fin</h1>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+
+		<script src="graph.js"></script>
+	</body>
 </html>
